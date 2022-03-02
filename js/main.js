@@ -19,7 +19,33 @@ const getData = () => [
 const randomize = () => {
     const cardData = getData();
     cardData.sort(() => Math.random() - 0.5);
-    console.log(cardData);
+    // console.log(cardData);
+    return cardData;
 };
 
-randomize();
+// randomize();
+
+// Functiom
+const cardGenerator = () => {
+    const cardData = randomize();
+    // console.log(cardData)
+    
+    // Generate HTML
+    cardData.forEach(item => {
+    // console.log(item);
+    const card = document.createElement("div");
+    const face = document.createElement("img");
+    const back = document.createElement("div");
+    card.classList = "card";
+    face.classList = "face";
+    back.classList = "back";
+    // Attach info to cards
+    face.src = item.imgSrc;
+    // Attach cards to section
+    section.appendChild(card);
+    card.appendChild(face);
+    card.appendChild(back);
+})
+};
+
+cardGenerator();
