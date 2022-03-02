@@ -3,7 +3,7 @@ Description:
 
 Memory Matcher is a game where you have to click on a card to see what image is underneath it and try to find the matching image underneath the other cards.
 
-User Stories
+User Stories......
 
 1.User can see a grid with v x v cards (v is an integer). All the cards are faced down (hidden state).
 
@@ -20,3 +20,25 @@ If there isn’t a match, the 2 cards will flip back to their original state (hi
 5.When all the matches have been found, the User can see a game over box showing a Congratulations message.
 
 
+
+Steps to building my game.....
+
+
+
+FACE DOWN
+Steps 1 - 3:
+First to play the game I must shuffle all the tiles and lay it in a rectangle grid face down, then i define the tiles with a function.
+
+Next I must create a for loop so it's easy to create coordinate for the grid. Declare an empty tile array to store tiles.
+
+The outer loop repeats the columns we want, and the inner loop repeats the rows and each new tile is set with a value of v and g to match the columns and rows.
+
+FACE UP (Assigning image)
+Step 4 - 8:
+There must be 2 of every imagine in the array randomly distributed.
+
+First we must create an array of the possible images, using the getImage function from my library.
+
+Only need 4 images for the face of 8 tiles, so I must create a new array thata hold 2 copies of 4 randomly selceted images from the first array.
+
+In the for loop where I created the tiles, I'll assign an image from that array to each tile.
