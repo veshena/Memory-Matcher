@@ -15,7 +15,7 @@ const getData = () => [
     {imgSrc: "./images/pomerac.jpeg", name: "pomerac"},
 ];
 
-
+// Randomize
 const randomize = () => {
     const cardData = getData();
     cardData.sort(() => Math.random() - 0.5);
@@ -23,15 +23,13 @@ const randomize = () => {
     return cardData;
 };
 
-// randomize();
-
-// Functiom
+// Card Functiom
 const cardGenerator = () => {
     const cardData = randomize();
     // console.log(cardData)
     
-    // Generate HTML
-    cardData.forEach(item => {
+// Generate HTML
+   cardData.forEach(item => {
     // console.log(item);
     const card = document.createElement("div");
     const face = document.createElement("img");

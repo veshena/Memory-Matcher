@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: rgb(188,143,143);
+    background: linear-gradient(to left, rgb(250, 250, 210), rgb(188, 143, 143));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 7rem);
+    grid-template-rows: repeat(2, 7rem);
+}
+.face,
+.back{
+    width: 80%;
+    height: 50%;
+}
