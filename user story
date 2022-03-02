@@ -1,0 +1,22 @@
+Memory Matcher
+Description: 
+
+Memory Matcher is a game where you have to click on a card to see what image is underneath it and try to find the matching image underneath the other cards.
+
+User Stories
+
+1.User can see a grid with v x v cards (v is an integer). All the cards are faced down (hidden state).
+
+2.User can click a button to start the game. When this button is clicked, the game will start.
+
+3.User can click on any card to reveal the image that is under it (change it to visible state for 3sec). The image will be displayed until the user clicks on a 2nd card.
+
+4.When the User clicks on the 2nd card:
+
+If there is a match, the 2 cards will be eliminated from the game (leave them in the visible state)
+or
+If there isn’t a match, the 2 cards will flip back to their original state (hidden state)
+
+5.When all the matches have been found, the User can see a game over box showing a Congratulations message.
+
+

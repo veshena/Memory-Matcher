@@ -2,7 +2,7 @@
 Thank you for taking the time to look at my assignment. I'm going to be building a game like this: https://www.memozor.com/memory-games/for-adults/sports-objects, but maybe not as advanced hahaha.
 
 So with that being said,
-Welcome to Vee's World where you'll be tested to see how well you remember. My game starts with all 16 cards facing up, allowing you to quickly memorize them. After a few seconds, all the cards flip to face down then you must determine if the symbol on the card you picked matches the symbol on the next card you select. After you pair all the correct cards you win the game.... To play my game, you can go to https://github.com/veshena/Veshena-Memory-Matcher
+Welcome to Vee's World where you'll be tested to see how well you remember. My game starts with all 8 cards facing up, allowing you to quickly memorize them. After a few seconds, all the cards flip to face down then you must determine if the symbol on the card you picked matches the symbol on the next card you select. After you pair all the correct cards you win the game.... To play my game, you can go to https://github.com/veshena/Veshena-Memory-Matcher
 
 
 # Memory Matcher
