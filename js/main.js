@@ -1,10 +1,16 @@
 // Get the section and span from the body
 const section = document.querySelector("section");
 const livesCount = document.querySelector("span");
-let lives = 3;
+let lives = 4;
+
+
+
 
 // Link text
 livesCount.textContent = lives;
+
+
+
 
 // Generate Object
 const getData = () => [
@@ -18,6 +24,9 @@ const getData = () => [
     { imgSrc: "./images/pomerac.jpeg", name: "pomerac" },
 ];
 
+
+
+
 // Randomize
 const randomize = () => {
     const cardData = getData();
@@ -25,6 +34,9 @@ const randomize = () => {
     // console.log(cardData);
     return cardData;
 };
+
+
+
 
 // Card Functiom
 const cardGenerator = () => {
@@ -58,6 +70,10 @@ const cardGenerator = () => {
         });
     });
 };
+
+
+
+
 // Check cards
 const checkCards = (v) => {
     console.log(v);
@@ -65,6 +81,7 @@ const checkCards = (v) => {
     const clickedCard = v.target;
     clickedCard.classList.add("flipped");
     const flippedCards = document.querySelectorAll(".flipped");
+    const toggleCard = document.querySelectorAll(".toggleCard");
     console.log(flippedCards);
 
     // if statement
@@ -85,20 +102,38 @@ const checkCards = (v) => {
             });
             lives--;
             livesCount.textContent = lives;
-            if(lives === 0) {
-                restart();
+            if (lives === 0) {
+                restart(" 😭 TRY AGAIN!!! 😭 ");
             }
         }
     }
+    if (toggleCard.length === 8) {
+        restart(" 🥳 YOU WON!!! 🔥 ");
+    }
 };
 
+
+
+
+
 // Restart
-const restart = () => {
+const restart = (text) => {
     let cardData = randomize();
     let faces = document.querySelectorAll(".face");
     let cards = document.querySelectorAll(".card");
-    cardData.forEach((item,index) => {
+    section.style.pointerEvents = "none";
+    cardData.forEach((item, index) => {
         cards[index].classList.remove("toggleCard");
-    })
+
+        setTimeout(() => {
+            cards[index].style.pointerEvents = "all";
+            faces[index].src = item.imgSrc;
+            cards[index].setAttribute("name", item.name);
+            section.style.pointerEvents = "all";
+        }, 1000);
+    });
+    lives = 4;
+    livesCount.textContent = lives;
+    setTimeout(() => window.alert(text), 100);
 }
 cardGenerator();

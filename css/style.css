@@ -17,6 +17,10 @@ section{
     grid-gap: 1rem;
     perspective: 800px;
 }
+
+
+
+
 .card{
     position: relative;
     transform-style: preserve-3d;
@@ -37,4 +41,27 @@ section{
 }
 .toggleCard{
     transform: rotateY(180deg);
+}
+.face{
+    transform: rotateY(-180deg);
+}
+
+
+
+
+.wrapper{
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    margin-top: 0%;
+}
+.wrapper ul{
+display: flex;
+justify-content: center;
+height: 50px;
+}
+.wrapper ul li{
+    display: inline-block;
+    padding: 40px 15px;
+    justify-content: center;
 }
