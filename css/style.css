@@ -1,32 +1,61 @@
 body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    font-family: 'Road Rage', cursive;
+    font-style: italic;
+    font-weight: bolder;
     height: 100vh;
-    background: rgb(188,143,143);
-    background: linear-gradient(to left, rgb(250, 250, 210), rgb(188, 143, 143));
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    background-image: url("https://static.xtrawine.com/Global/Images/XW/wine-zones/104_TrinidadTobago_3.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 8px;
 }
 section{
     display: grid;
-    grid-template-columns: repeat(4, 7rem);
-    grid-template-rows: repeat(2, 7rem);
+    grid-template-columns: repeat(4, 15rem);
+    grid-template-rows: repeat(2, 8rem);
     grid-gap: 1rem;
     perspective: 800px;
 }
 
+h1{
+font-size: 45px;
+color: rgb(250, 206, 72);
+font-weight: bold;
+text-align: left;
+position: relative;
+}
 
+p{
+font-size: 2em;
+word-spacing: 0.4em;
+color: rgb(108, 111, 133);
+text-align: right;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+h3{
+color: rgb(177, 111, 105);
+font-weight: bold;
+font-size: 25px;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
 
 
 .card{
     position: relative;
     transform-style: preserve-3d;
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-   
+
 }
 .face,
 .back{
@@ -36,7 +65,7 @@ section{
     pointer-events: none;
 }
 .back{
-    background: rgb(255,228,181);
+    background: rgb(177, 111, 105);
     backface-visibility: hidden;
 }
 .toggleCard{
@@ -48,12 +77,15 @@ section{
 
 
 
-
+footer{
+    display: block;
+}
 .wrapper{
     width: 100%;
     z-index: 1;
     background-color: transparent;
     margin-top: 0%;
+    font-size: 30px;
 }
 .wrapper ul{
 display: flex;
