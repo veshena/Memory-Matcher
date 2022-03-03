@@ -1,9 +1,12 @@
+// Get the section and span from the body
 const section = document.querySelector("section");
 const livesCount = document.querySelector("span");
-const lives = 7;
+const lives = 3;
 
+// Link text
 livesCount.textContent = lives;
 
+// Generate Object
 const getData = () => [
     {imgSrc: "./images/cashew.jpeg", name: "cashew"}, 
     {imgSrc: "./images/mango.jpeg", name: "mango"},
@@ -43,7 +46,18 @@ const cardGenerator = () => {
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
-})
+
+    card.addEventListener("click", (v) => {
+        card.classList.toggle("toggleCard");
+        checkCards(v);
+    });
+});
 };
+// Check cards
+const checkCards = (v) => {
+    const clickedCard = v.target;
+    console.log(clickedCard);
+};
+
 
 cardGenerator();
