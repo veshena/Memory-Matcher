@@ -34,14 +34,19 @@ const cardGenerator = () => {
 // Generate HTML
    cardData.forEach(item => {
     // console.log(item);
+    
     const card = document.createElement("div");
     const face = document.createElement("img");
     const back = document.createElement("div");
     card.classList = "card";
     face.classList = "face";
     back.classList = "back";
+    
     // Attach info to cards
     face.src = item.imgSrc;
+card.setAttribute("name", item.name)
+
+    
     // Attach cards to section
     section.appendChild(card);
     card.appendChild(face);
@@ -55,8 +60,23 @@ const cardGenerator = () => {
 };
 // Check cards
 const checkCards = (v) => {
+    console.log(v);
+    
     const clickedCard = v.target;
-    console.log(clickedCard);
+    clickedCard.classList.add("flipped");
+    const flippedCards = document.querySelectorAll(".flipped");
+    console.log(flippedCards);
+    
+    // if statement
+if(flippedCards.length === 2){
+    if(
+        flippedCards[0].getAttribute("name") === flippedCards[1].getAttribute("name")
+    ) {
+        console.log("match");
+    } else {
+        console.log("wrong")
+    }
+}
 };
 
 
