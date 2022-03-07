@@ -1,3 +1,11 @@
+html{
+    background-image: url("https://media.istockphoto.com/photos/port-of-spain-in-trinidad-and-tobago-picture-id465302010?k=20&m=465302010&s=612x612&w=0&h=g0uYzjnOAgTSvZ9G3SsCsuwr-80P6qQYHK60BLicKfs=");
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 body{
     font-family: 'Road Rage', cursive;
     font-style: italic;
@@ -5,11 +13,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("https://static.xtrawine.com/Global/Images/XW/wine-zones/104_TrinidadTobago_3.jpg");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 8px;
+    margin: 6px;
 }
 section{
     display: grid;
@@ -20,17 +24,17 @@ section{
 }
 
 h1{
-font-size: 45px;
-color: rgb(250, 206, 72);
+font-size: 50px;
+color: rgb(206, 177, 173);
 font-weight: bold;
-text-align: left;
+text-align: end;
 position: relative;
 }
 
 p{
 font-size: 2em;
-word-spacing: 0.4em;
-color: rgb(108, 111, 133);
+word-spacing: 0.2em;
+color: rgb(163, 83, 59);
 text-align: right;
 display: block;
 margin-block-start: 1em;
@@ -40,9 +44,9 @@ margin-inline-end: 0px;
 }
 
 h3{
-color: rgb(177, 111, 105);
+color: rgb(163, 83, 59);
 font-weight: bold;
-font-size: 25px;
+font-size: 2em;
 display: block;
 margin-block-start: 1em;
 margin-block-end: 1em;
@@ -65,7 +69,7 @@ margin-inline-end: 0px;
     pointer-events: none;
 }
 .back{
-    background: rgb(177, 111, 105);
+    background: rgb(35, 60, 54);
     backface-visibility: hidden;
 }
 .toggleCard{
@@ -84,7 +88,7 @@ footer{
     width: 100%;
     z-index: 1;
     background-color: transparent;
-    margin-top: 0%;
+    margin: 0%;
     font-size: 30px;
 }
 .wrapper ul{
