@@ -1,12 +1,14 @@
-html{
+html {
     background-image: url("https://media.istockphoto.com/photos/port-of-spain-in-trinidad-and-tobago-picture-id465302010?k=20&m=465302010&s=612x612&w=0&h=g0uYzjnOAgTSvZ9G3SsCsuwr-80P6qQYHK60BLicKfs=");
-    background-repeat:  no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat:round;
+}
+
+.container {
+    text-align: end;
 }
 
 
-body{
+body {
     font-family: 'Road Rage', cursive;
     font-style: italic;
     font-weight: bolder;
@@ -15,19 +17,18 @@ body{
     flex-direction: column;
     margin: 6px;
 }
-section{
+/* section{
     display: grid;
     grid-template-columns: repeat(4, 15rem);
     grid-template-rows: repeat(2, 8rem);
     grid-gap: 1rem;
     perspective: 800px;
-}
+} */
 
 h1{
-font-size: 50px;
-color: rgb(206, 177, 173);
+font-size: 30px;
+color: black;
 font-weight: bold;
-text-align: end;
 position: relative;
 }
 
@@ -55,7 +56,7 @@ margin-inline-end: 0px;
 }
 
 
-.card{
+/* .card{
     position: relative;
     transform-style: preserve-3d;
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -77,11 +78,11 @@ margin-inline-end: 0px;
 }
 .face{
     transform: rotateY(-180deg);
-}
+} */
 
 
 
-footer{
+/* footer{
     display: block;
 }
 .wrapper{
@@ -100,4 +101,4 @@ height: 50px;
     display: inline-block;
     padding: 40px 15px;
     justify-content: center;
-}
+} */
